@@ -4,14 +4,6 @@ const fs = require('fs');
 const questions = require('./questions');
 
 
-inquirer
-.prompt(questions)
-.then((response) => {
-    fs.writeFile('README.md', readmeString(response), (err) =>{
-        err ? console.error(err) : console.log('Generating README.md...')
-    })
-});
-
 
 // TODO: Create a function to write README file
 function readmeString(response) {
@@ -37,7 +29,7 @@ function readmeString(response) {
   ${response.usage}
   
   # License
-  ${response.license}
+  ![GitHub Licence](https://img.shields.io/badge/license-${response.license}-blue.svg)
   
   # Contributing
   ${response.contributing}
@@ -51,3 +43,16 @@ function readmeString(response) {
   If you have any questions, contact me at [${response.email}](mailto:${response.email}) or at GitHub [${response.username}](https://github.com/${response.username}).`;
   }
   
+// TODO: Create a function to initialize app
+function init() {
+
+    inquirer
+.prompt(questions)
+.then((response) => {
+    fs.writeFile('README.md', readmeString(response), (err) =>{
+        err ? console.error(err) : console.log('Generating README.md...')
+    })
+});
+}
+// Function call to initialize app
+init();
