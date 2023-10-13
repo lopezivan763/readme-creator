@@ -1,7 +1,7 @@
 # README GENERATOR
   
   # Description
-  
+  This project creates a readme file through the terminal
   
   # Table of Contents
   - [Installation](#installation)
@@ -13,22 +13,22 @@
   
   # Installation
   ```bash
-  afdfadf
+  npm i
   ```
   
   # Usage
-  fdaf
+  Need to install iquirer
   
   # License
   ![GitHub Licence](https://img.shields.io/badge/license-MIT-blue.svg)
   
   # Contributing
-  afdf
+  N/A
   
   # Test
   ```bash
-  adfa
+  npm test
   ```
   
   # Questions
-  If you have any questions, contact me at [refs](mailto:refs) or at GitHub [tes](https://github.com/tes).
+  If you have any questions, contact me at [lopezivan763@gmail.com](mailto:lopezivan763@gmail.com) or at GitHub [lopezivan763](https://github.com/lopezivan763).
