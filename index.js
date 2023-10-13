@@ -40,7 +40,8 @@ function readmeString(response) {
   \`\`\`
   
   # Questions
-  If you have any questions, contact me at [${response.email}](mailto:${response.email}) or at GitHub [${response.username}](https://github.com/${response.username}).`;
+  If you have any questions, contact me at [${response.email}](mailto:${response.email}) or at GitHub [${response.username}](https://github.com/${response.username}).`
+
   }
   
 // TODO: Create a function to initialize app
